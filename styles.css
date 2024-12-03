@@ -1,0 +1,289 @@
+:root{
+    --white: #ffff;
+    --baby-blue: #96B9D9;
+    --sky-blue: #3088BF;
+    --forest-green: #768C26;
+    --wood-brown: #591902;
+    --black: #260101;
+    --black-transparent: rgba(0, 0, 0, 0.8);
+
+    --fonts: "Funnel Sans", arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    max-width: 1280px;
+    padding: 1rem;
+    background-color: var(--baby-blue);
+    color: var(--white);
+    font-family: var(--fonts);
+    margin: 0 auto;
+}
+
+header{
+    background-image: url(images/swiss-valley.jpg);
+    background-position-y: center;
+    background-color: var(--forest-green);
+    width: 100%;
+    max-width: 1280px;
+    padding: 1rem;
+    margin: 0 auto;
+    justify-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--fonts);
+    color: var(--sky-blue);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li{
+    margin: 0 15px;
+    text-align: center;
+    padding: 2rem;
+}
+
+nav a{
+    color: var(--white);
+    background-color: var(--forest-green);
+    margin: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px var(--black-transparent);
+}
+
+nav a:hover{
+    color: var(--forest-green);
+    background-color: var(--white);
+    box-shadow: 2px 2px 4px var(--black-transparent);
+}
+
+main{
+    display: block;             
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main > h2{
+    font-size: 5rem;
+    text-align: center;          
+    margin: 0;                   
+}
+
+main > p{
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+
+div{
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#amenities{
+    grid-column: 1;
+}
+
+#amenities h3{
+    font-size: 1.5rem;
+    grid-column: 1;
+    text-align: center;
+}
+
+#amenities p{
+    grid-column: 1;
+    width: 100%;
+    max-width: 590px;
+}
+
+#escape{
+    grid-column: 2;
+}
+
+#escape h3{
+    font-size: 1.5rem;
+    grid-column: 2;
+    text-align: center;
+}
+
+#escape p{
+    grid-column: 2;
+    width: 100%;
+    max-width: 590px;
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact > h2, p, img{
+    grid-column: 1;
+    top: 50px;
+}
+
+#contact > h2{
+    font-size: 2rem;
+}
+
+#contact > img{
+    justify-self: center;
+    align-content: center;
+    height: auto;
+    width: 100%
+}
+
+#contact > p{
+    display: block;
+    text-align: justify;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form{
+    display: grid;
+    margin: 16px auto;
+    grid-column: 2;
+    justify-self: start;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+input, label, select, textarea{
+	display: block;
+	width: 100%;
+    gap: 1rem;
+}
+
+input, select, textarea{
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 24px;
+	border-radius: 4px;
+    width: 100%;
+}
+
+.required{
+	color: var(--wood-brown);
+	font-weight: bold;
+	font-size: 1.35rem;
+}
+
+fieldset{
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+    border-color: var(--black);
+}
+
+fieldset label{
+	margin-left: 0;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+ display: flex;
+ align-items: center;
+}
+
+input[type="radio"] {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    border-radius: 0;
+}
+
+input[type="radio"] + label::before {
+    content: "";   
+    font-size: 2.25em;
+    line-height: 0.65;
+    border-radius: 50%;
+    display: inline-block;  
+    height: 20px;
+    width: 22px;
+    text-align: center;
+    margin-right: 16px;
+    border: 2px solid var(--white);
+    padding-bottom: 2px;
+}
+
+input[type="radio"]:checked + label::before {
+    content: "\2022";
+    color: var(--white);
+    background: var(--sky-blue);
+}
+
+input[type="radio"]:focus{
+ outline: none;
+}
+
+legend{
+	font-weight: bold;
+}
+
+fieldset label{
+	margin-left: 0;
+}
+
+input:focus, select:focus, textarea:focus{
+	outline: 3px solid var(--wood-brown);
+}
+
+input[type="submit"] {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    font-family: var(--fonts);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--white);
+    color: var(--sky-blue);
+    border: 3px solid var(--sky-blue)
+}
+
+input[type="submit"]:focus {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    border: 3px solid var(--white)
+}
+
+footer{
+    justify-items: center;
+}

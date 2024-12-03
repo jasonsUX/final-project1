@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Solara Springs</title>
+        <meta name="author" content="Jason Tan">
+        <meta name="description" content="Come sunbathe your worries and stresses away at the open-air hot springs at Solara Springs!">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Solara Springs</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accomodations</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="contact">
+            <h2>Contact Us</h2>
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields marked with a<span class="required">*</span>.</p>
+            <img src="images/swiss-peak.jpg" alt="A tall towering mountain with its peak covered in white snow in front of a clear blue sky">
+            
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                <label for="my-name">Full Name<span class="required">*</span></label>
+                <input type="text" name="my-name" id="my-name" required>
+
+                <label for="my-email">Email Address<span class="required">*</span></label>
+                <input type="email" name="my-email" id="my-email" required>
+
+                <label for="my-phone">Phone Number<span class="required">*</span></label>
+                <input type="tel" name="my-phone" id="my-phone" required>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+
+                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                    <label for="pref-email">Email</label>
+
+                    <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+                <label for="my-comments">Comments<span class="required">*</span></label>
+                <textarea name="my-comments" id="my-comments" required></textarea>
+
+                <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+            </form>
+        </main>
+        
+        <footer>
+            <p>Copyright &copy; 2024 - Solara Springs</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
